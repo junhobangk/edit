@@ -21,7 +21,7 @@
 
         Context initCtx = new InitialContext();
         Context envCtx = (Context)initCtx.lookup("java:comp/env");
-        DataSource ds = (DataSource)envCtx.lookup("project_mariadb");
+        DataSource ds = (DataSource)envCtx.lookup("enrollment");
 
         conn = ds.getConnection();
     %>
